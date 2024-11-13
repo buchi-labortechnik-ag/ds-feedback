@@ -2,6 +2,7 @@ name: Issue Report
 description: Report a bug or problem found in existing functionality
 title: "fix: "
 labels: ["type:fix"]
+type: bug
 assignees: []
 
 body:
