@@ -1,7 +1,7 @@
 name: Bug Report
 description: Report a bug or problem found in existing functionality
 title: "fix: "
-labels: ["type:fix"]
+labels: ["type:fix", "severity:medium"]
 type: bug
 assignees: []
 
@@ -10,15 +10,9 @@ body:
     attributes:
       value: "### Report a Bug\nPlease verify that the issue has not already been reported."
   
-  - type: dropdown
+  - type: markdown
     id: severity
-    attributes:
-      label: "Severity"
-      description: "Select the severity of the bug."
-      options:
-        - high
-        - medium
-        - low
+    value: "### Severity\nSet the severity of this bug. Select the appropriate severity level from the Labels section on the right (cogwheel)."
 
   - type: dropdown
     id: service
