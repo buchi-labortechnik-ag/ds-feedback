@@ -69,13 +69,3 @@ body:
       label: "Additional Notes"
       description: "Add any related issues, resources, diagrams, or references."
       placeholder: "Include additional notes here"
-
-  - type: markdown
-    attributes:
-      value: "### Attachments\nUpload any screenshots or files used to reproduce the issue."
-
-  - type: input
-    id: attachments
-    attributes:
-      label: "File Upload"
-      description: "Attach screenshots or files used to reproduce the issue."
