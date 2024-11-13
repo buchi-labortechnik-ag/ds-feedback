@@ -1,7 +1,7 @@
 name: Bug Report
 description: Report a bug or problem found in existing functionality
 title: "fix: "
-labels: ["type:fix", "severity:medium"]
+labels: ["type:fix", "severity: medium"]
 type: bug
 assignees: []
 
