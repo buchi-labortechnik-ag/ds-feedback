@@ -1,4 +1,4 @@
-name: Issue Report
+name: Bug Report
 description: Report a bug or problem found in existing functionality
 title: "fix: "
 labels: ["type:fix"]
