@@ -1,0 +1,43 @@
+name: Feature Request
+description: Suggest new functionality or improvements to existing capabilities
+title: "feat: "
+type: enhancement
+labels: ["type:feat", "priority:medium"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: "### Request a new Feature\nPlease verify that the feature has not already been requested."
+
+  - type: markdown
+    attributes:
+      value: "### Priority\nSet the priority for this feature request. Select the appropriate priority level from the Labels section on the right."
+      
+  - type: textarea
+    id: overview
+    attributes:
+      label: "Overview"
+      description: "Describe the new feature. What problem does it solve? How will it improve the project?"
+      placeholder: "Provide a high-level overview of the feature request"
+
+  - type: textarea
+    id: detailed_description
+    attributes:
+      label: "Detailed Description"
+      description: "Explain the feature in more detail, including functionality, user interactions, and technical requirements."
+      placeholder: "Add technical details, user stories, or other relevant information"
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: "Acceptance Criteria"
+      description: "List the criteria that will define the completion of this feature. Reviewers and testers will use these criteria to the letter to verify the implementation."
+      placeholder: "- [ ] Criterion 1\n- [ ] Criterion 2"
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: "Additional Notes"
+      description: "Add any related issues, resources, diagrams, or references."
+      placeholder: "Include any other relevant information or references"
