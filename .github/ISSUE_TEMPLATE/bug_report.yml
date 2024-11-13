@@ -1,0 +1,94 @@
+name: Issue Report
+description: Report a bug or problem found in existing functionality
+title: "fix: "
+labels: ["type:fix"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: "### Report a Bug\nPlease verify that the issue has not already been reported."
+  
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      description: "Select the severity of the bug."
+      options:
+        - high
+        - medium
+        - low
+      required: true
+
+  - type: dropdown
+    id: service
+    attributes:
+      label: "Service"
+      description: "Select the service where the issue was encountered."
+      options:
+        - cloud.io
+        - db population tool
+        - db search
+        - transpecr
+      required: true
+
+  - type: textarea
+    id: overview
+    attributes:
+      label: "Version"
+      description: "The version number of the service where the issue was encountered."
+      placeholder: "MAJOR.MINOR.REVISION"
+      required: true
+
+  - type: textarea
+    id: overview
+    attributes:
+      label: "Overview"
+      description: "Provide a short description of the issue. Please check if the issue has not already been reported."
+      placeholder: "Briefly describe the issue"
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "### Steps to reproduce\nList the exact steps to reproduce the issue."
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "List each step in detail."
+      value: "- Step 1\n- Step 2"
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: "Expected Behavior"
+      description: "What was the expected behavior?"
+      placeholder: "Describe the expected outcome"
+      required: true
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: "Additional Notes"
+      description: "Add any related issues, resources, diagrams, or references."
+      placeholder: "Include additional notes here"
+
+  - type: markdown
+    attributes:
+      value: "### Attachments\nUpload any screenshots or files used to reproduce the issue."
+
+  - type: input
+    id: attachments
+    attributes:
+      label: "File Upload"
+      description: "Attach screenshots or files used to reproduce the issue."
+      multiple: true
+      accept:
+        - image/*
+        - application/zip
+        - application/json
+        - application/xml
+        - text/tab-separated-values
+        - application/octet-stream
