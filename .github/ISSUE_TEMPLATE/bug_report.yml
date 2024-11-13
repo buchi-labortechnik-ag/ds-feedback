@@ -12,7 +12,8 @@ body:
   
   - type: markdown
     id: severity
-    value: "### Severity\nSet the severity of this bug. Select the appropriate severity level from the Labels section on the right (cogwheel)."
+    attributes:
+      value: "### Severity\nSet the severity of this bug. Select the appropriate severity level from the Labels section on the right (cogwheel)."
 
   - type: dropdown
     id: service
